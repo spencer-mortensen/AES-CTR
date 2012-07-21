@@ -1,0 +1,35 @@
+See the file "index.php" for a working example.
+
+OVERVIEW
+
+AES (Advanced Encryption Standard) is a cipher adopted by the U.S. government for its classified documents.
+It's secure (all known attacks are computationally infeasible), and fast in both hardware and software.
+
+CTR (Counter) mode is a cryptographic mode that converts a block cipher like AES into a stream cipher
+that can be used on any stream of data with arbitrary length. CTR mode has a particularly elegant
+implementation, and has been widely adopted.
+
+
+CHOOSING AN AES ENCRYPTION KEY:
+
+AES supports encryption keys with three lengths, corresponding to increasing levels of security:
+
+NSA rating:   key length:            example key:
+SECRET        16 bytes (128 bits)    aN-zx:+_z)UP[`vz
+TOP SECRET    24 bytes (192 bits)    Thl\TFvON6J"sb\(VGhw@gTr
+TOP SECRET    32 bytes (256 bits)    V<||5DK7KdRYyBLEtY^w~0yk1"#NCZ|N
+
+In general: 1 byte = 1 ASCII character.
+
+See the file "index.php" for a working example.
+
+
+FUTHER READING:
+
+AES encryption:
+http://en.wikipedia.org/wiki/Advanced_Encryption_Standard
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.1353&rep=rep1&type=pdf
+http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf
+
+Counter (CTR) mode:
+http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Counter_.28CTR.29
