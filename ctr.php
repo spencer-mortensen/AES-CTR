@@ -5,11 +5,18 @@
 
 class CTR
 {
-	public $counter, $cipher;
+	public $counter;
+	public $cipher;
 
-	public function CTR ($cipher) { $this->cipher = $cipher; }
+	public function __construct ($cipher)
+	{
+		$this->cipher = $cipher;
+	}
 
-	public function encrypt ($text) { return self::new_nonce().self::translate($text); }
+	public function encrypt ($text)
+	{
+		return self::new_nonce().self::translate($text);
+	}
 
 	public function decrypt ($text)
 	{

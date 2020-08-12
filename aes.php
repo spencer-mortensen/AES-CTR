@@ -8,7 +8,7 @@ class AES
 	private $Nr; // number of rounds (10/12/14 for a 128/192/256-bit key)
 	private $w; // key schedule as an array (Nr+1 x Nb bytes) generated from the cipher key
 
-	public function AES ($key)
+	public function __construct ($key)
 	{
 		$t0 =& self::$t0; $t1 =& self::$t1; $t2 =& self::$t2; $t3 =& self::$t3;
 		$sbox0 =& self::$sbox0; $sbox1 =& self::$sbox1; $sbox2 =& self::$sbox2; $sbox3 =& self::$sbox3;
